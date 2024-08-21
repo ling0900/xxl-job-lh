@@ -29,6 +29,9 @@ public class JobScheduleHelper {
 
     public static final long PRE_READ_MS = 5000;    // pre read
 
+    /**
+     * xxl-job, admin JobScheduleHelper#scheduleThread
+     */
     private Thread scheduleThread;
     private Thread ringThread;
     private volatile boolean scheduleThreadToStop = false;
